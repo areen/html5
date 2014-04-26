@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Basic HTML5/CSS3 Responsive Web Design</title>
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<style>
+body {
+	background : #DAD5C1;
+	font-family : "Helvetica","Arial",Tahoma,Arial,Helvetica,sans-serif;
+}
+h3 {
+	text-align : center;
+	text-decoration : underline;
+}
+p {
+	padding : 2%;
+}
+img {
+	text-align : center;
+	max-width : 100%;
+	height : auto;
+	width : auto;
+}
+#wrapper {
+	margin : 0 auto;
+	max-width : 980px;
+	width : 96%;
+	background : #CBBB9B;
+	padding : 2%;
+	border-radius : 10px;
+}
+header {
+	padding : 5px;
+	text-align : center;
+}
+nav {
+	background : #A09885;
+	padding : 0;
+	margin : 0 0;
+	border-radius : 10px;
+}
+nav ul {
+	list-style : none;
+	margin-left : 7%;
+	padding : 0;
+}
+nav li a {
+	color : #000;
+	display : block;
+	float : left;
+	padding : 20px;
+	text-decoration : none;
+}
+nav a:hover, nav li.active a {
+	background-color : #322F2C;
+	color : #fff;
+}
+.clearfix {
+	clear : both;
+}
+#social {
+	text-align : center;
+	}
+#social img {
+	padding-top : 5px;
+	height : 50px;
+	width : 50px;
+}
+.left-col {
+	background : #DAD5C1;
+	width : 60%;
+	float : left;
+	margin-top : 2%;
+	border-radius : 10px;
+}
+.sidebar {
+	background : #DAD5C1;
+	width : 38%;
+	float : right;
+	margin-top : 2%;
+	border-radius : 10px;
+}
+.vid {
+	position : relative;
+	padding-bottom : 56.25%;
+	padding-top : 30px;
+	height : 0;
+	overflow : hidden;
+}
+.vid iframe {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+}
+footer {
+	background : #A09885;
+	border-radius : 50px;
+}
+/*-------Media------*/
+
+@media screen and (max-width: 478px) 	{
+body {
+	font-size: 13px;
+}
+}
+
+@media screen and (max-width: 740px) 	{
+.left-col {
+	width: 100%;
+}
+.sidebar {
+	width: 100%;
+}
+}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<header>
+			<h1><a href="index.html"><img src="http://www.w3newbie.com/wp-content/uploads/boxer_logo.png"/></a></h1>
+		</header>
+			<nav>
+				<ul>
+					<li class='active'><a href="#">Intro</a></li>
+					<li><a href="#">Size</a></li>
+					<li><a href="#">Play</a></li>
+					<li><a href="#">Food</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</nav>
+			
+			<aside class="sidebar">
+			<div id="social">
+				<tr>
+					<td><a href="http://www.facebook.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" alt="facebook"/></a></td>
+					<td><a href="http://www.twitter.com/drewoncue" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" alt="twitter"/></a></td>
+					<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="youtube"/></a></td>
+					<td><a href="http://www.plus.google.com‎" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/google_plus.png" alt="google plus"/></a></td>
+				</tr>
+			</div>
+			</aside>
+			
+				<section class="left-col">
+				<h3>My Boxer Dog</h3>
+				<img src="http://www.w3newbie.com/wp-content/uploads/boxer1.png"/>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+				</section>	
+
+				<aside class="sidebar">
+					<h3>Size</h3>
+					<img src="http://www.w3newbie.com/wp-content/uploads/boxer2.png"/>
+						<p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+				</aside>
+				<aside class="sidebar">
+					<h3>Play</h3>
+					<img src="http://www.w3newbie.com/wp-content/uploads/boxer3.png"/>
+						<p>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.</p>
+				</aside>
+				<section class="left-col">
+				<h3>Food</h3>
+				<div class="vid">
+						<iframe width="560" height="315" src="http://www.youtube.com/embed/eQQi7eZEje4" frameborder="0" allowfullscreen></iframe>
+				</div>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+				</section>
+			<div class="clearfix"></div>
+		<footer>
+			<h3>Boxer Dog 2013</h3>
+		</footer>
+	</div>
+	
+</body>
+</html>
